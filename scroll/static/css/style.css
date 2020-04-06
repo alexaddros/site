@@ -1,0 +1,216 @@
+@font-face {
+  font-family: regular; /* Гарнитура шрифта */
+  src: url(Rubik-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: head; /* Гарнитура шрифта */
+  src: url(Rubik-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+html {
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+body {
+  margin: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: auto  ;
+  background-color: #A5E0E4;
+}
+
+#content-welcome {
+  position: absolute;
+  margin-top: 140px;
+  height: 600px;
+  width: 1200px;
+  left: 200px;
+  background-image: url('static/content-welcome.png');
+}
+
+.header {
+  background-color: #F9E3AC;
+  position: fixed;  
+  width: 100%;
+  height: 60px;
+  left: 0px;
+  top: 0px;  
+  z-index: 1000;
+}
+
+.header > img {
+  position: absolute;
+  left: 32px;
+  top: 15px;
+  width: 346px;
+  height: 30px;
+}
+
+.header > .buttons {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 20% 22% 37% 20%;
+  width: 686px;
+  height: 7.5px;
+  left: 605px;
+  top: 26px;
+}
+
+.header > .circles {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 105px;
+  height: 35px;
+  left: calc(50% - 35px/2 + 654.5px);
+  top: 13px;
+}
+
+.header > .circles > img {
+  width: 35px;
+  height: 35px;
+}
+
+.header > .circles > .circle1 {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 1437px;
+  top: 13px;
+}
+
+.header > .circles > .circle2 {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 1507px;
+  top: 13px;
+}
+
+
+.header > .buttons > .button {
+  height: 7.5px;
+  font-family: regular;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.scroller {
+  position: absolute;
+  display: grid;
+  width: 850px;
+  left: 550px;
+  top: 80px;  
+  background-color: #fff;
+  grid-template-columns: 100%;
+}
+
+.scroller > .record-text {
+  display: grid;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-bottom: 20px solid #eeecee;
+  grid-template-rows: 10% 70% 20%;
+  grid-row-gap: 10px;
+}
+
+.scroller > .record-text > rtitle {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-family: head;
+  width: 100%;
+  font-size: 28px;
+  color: #3A3232;
+}
+
+.scroller > .record-text > rtext {
+  margin-left: 30px;
+  margin-top: 65px;
+  font-family: regular;
+  width: 90%;
+  font-size: 18px;
+  color: #3A3232;
+}
+
+.scroller > .record-text > rlink {
+  text-align: right;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  font-size: 18px;
+  font-family: regular;
+  color: #c4c4c4;
+}
+
+.scroller > .record-img {
+  display: grid;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-bottom: 20px solid #eeecee;
+  grid-template-rows: 10% 10% 70% 10%;
+  grid-row-gap: 10px;
+}
+
+.scroller > .record-text > rtitle {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-family: head;
+  width: 100%;
+  font-size: 28px;
+  color: #3A3232;
+}
+
+.scroller > .record-text > rtext {
+  margin-left: 30px;
+  margin-top: 65px;
+  font-family: regular;
+  width: 90%;
+  font-size: 18px;
+  color: #3A3232;
+}
+
+.scroller > .record-text > rimg {
+  width: 850px;
+  height: 480px;
+}
+
+.scroller > .record-text > rlink {
+  text-align: right;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  font-size: 18px;
+  font-family: regular;
+  color: #c4c4c4;
+}
+
+.container1 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 200px;
+  top: 80px;
+  background-color: #fff;  
+}
+
+.container2{
+  position: absolute;
+  width: 300px;
+  height: 240px;
+  left: 200px;
+  top: 140px;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
